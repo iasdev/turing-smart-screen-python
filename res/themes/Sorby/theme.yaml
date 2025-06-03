@@ -1,0 +1,169 @@
+author: "@Sorby"
+
+display:
+  DISPLAY_SIZE: 3.5"
+  DISPLAY_ORIENTATION: portrait
+  DISPLAY_RGB_LED: 255, 255, 255
+
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 320
+    HEIGHT: 480
+
+static_text:
+  CPU_NAME:
+   TEXT: Ryzen 7 3700x
+   X: 160
+   Y: 40
+   FONT: extra/Monoalphabet.ttf
+   FONT_SIZE: 30
+   FONT_COLOR: 0, 255, 255
+   # BACKGROUND_COLOR: 255, 255, 255
+   BACKGROUND_IMAGE: background.png
+   ALIGN: center
+   ANCHOR: mm
+  GPU_NAME:
+   TEXT: RX 9070 XT
+   X: 160
+   Y: 255
+   FONT: extra/Monoalphabet.ttf
+   FONT_SIZE: 30
+   FONT_COLOR: 255, 29, 147
+   # BACKGROUND_COLOR: 255, 255, 255
+   BACKGROUND_IMAGE: background.png
+   ALIGN: center  
+   ANCHOR: mm
+
+STATS:
+  CPU:
+    PERCENTAGE:
+      INTERVAL: 3
+      RADIAL:
+        SHOW: True
+        X: 160
+        Y: 125
+        RADIUS: 50
+        WIDTH: 10
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        ANGLE_START: 120
+        ANGLE_END: 60
+        ANGLE_STEPS: 1
+        ANGLE_SEP: 5
+        CLOCKWISE: True
+        BAR_COLOR: 0, 255, 255
+        SHOW_TEXT: True
+        SHOW_UNIT: True
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      INTERVAL: 3
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 106
+        Y: 205
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left  
+        ANCHOR: mm
+  GPU:
+    INTERVAL: 3
+    PERCENTAGE:
+      RADIAL:
+        SHOW: True
+        X: 160
+        Y: 340
+        RADIUS: 50
+        WIDTH: 10
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        ANGLE_START: 120
+        ANGLE_END: 60
+        ANGLE_STEPS: 1
+        ANGLE_SEP: 5
+        CLOCKWISE: True
+        BAR_COLOR: 255, 29, 147
+        SHOW_TEXT: True
+        SHOW_UNIT: True
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 106
+        Y: 420
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left  
+        ANCHOR: mm
+  CUSTOM:
+    INTERVAL: 3
+    CPUWatts:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: False
+        X: 212
+        Y: 205
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left  
+        ANCHOR: lm
+    GPUHotspotTemp:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 212
+        Y: 420
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left  
+        ANCHOR: lm
+    GPUVRAMTemp:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 109
+        Y: 450
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left  
+        ANCHOR: mm
+    GPUWatts:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 212
+        Y: 450
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 26
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left  
+        ANCHOR: lm
