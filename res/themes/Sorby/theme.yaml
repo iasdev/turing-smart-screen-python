@@ -113,6 +113,19 @@ STATS:
         BACKGROUND_IMAGE: background.png
         ALIGN: left  
         ANCHOR: mm
+    FREQUENCY:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: False
+        X: 162
+        Y: 365
+        FONT: extra/Monoalphabet.ttf
+        FONT_SIZE: 20
+        FONT_COLOR: 255, 255, 255
+        # BACKGROUND_COLOR: 132, 154, 165
+        BACKGROUND_IMAGE: background.png
+        ALIGN: left  
+        ANCHOR: mm
   CUSTOM:
     INTERVAL: 3
     CPUWatts:
